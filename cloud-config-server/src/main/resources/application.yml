@@ -1,0 +1,76 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:SimpleProgramming/springcloud-config-repository.git
+          ignore-local-ssh-settings: true
+          strict-host-key-checking: false
+          search-paths:
+          - configuration/{application}/
+          - configuration/
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        MIIJJwIBAAKCAgEA0n7ZH0c3wl92itUmvDjD/HYvEdUTiULHLrtit/jhyAxie/CU
+                        fmm6519vvBzPS0uokaeJTECaDmJv2isZKGCAb5MmcYj+MUNL3A1sm2NfKnVacDnz
+                        dQjZWbVfTuLsZuYeAIFjdFUAAtKbeHDLg39P5WPVmIMZRYN3ukpL09yFVOk7yTZk
+                        RhvAGG246HSjz0nbJaYvglKO+ujDeePdLR+nw3xKBDs8+XO/jx9QDNauF1e2kyo1
+                        GX2Swgb4XMe/4Lst2V9cNW+p7fDDTZG8OuP3M/uhhsOq+mRvlVxIvi0L0yMcMz/9
+                        Vk7pf5nXAuwgJOhND/xbwdVd1Cnwm2wHf29EoL1iRcWBjP9NbQK7tHKVWN/uKnBL
+                        9ET2AxpgVYjaEKBbVpbE8R464ir3ngL01G3oiCK3M8QlbIHJaMifI2DVdqGraTxv
+                        3DEs08LQ6gFemqRLBSbyob7GR4ssppHffnMGLZhLXmApnckoSEuJzOhphnPMMBSf
+                        ck0cRfvCl9NxpcxamivDKBy28sz/aMjZi+y34L/WX8XHyrsNO0zmDmJJzy1JyL//
+                        VbnvKfV/n+ElhmISu12+c0JcykB9QTxT+V6+TutFmAHhmqqABfhFVeHga9YPexki
+                        LP2s1VMHrC55Xj+RvjT9YbPmJCW8QJMVR72WXVI4pLfEYPsR8jtgXzxA9IkCAwEA
+                        AQKCAgA7A8FP2aGyZx1PEy+G+ctIzsGnmDuf8g7x9StaNPboJUC/StX3EyGJmOI0
+                        tUcQ7ydVnskJjdsjSUneutKU1Wls3q6aijPqD9oG2eSnNBcMSlaOvFCbcV2unwEX
+                        ltt8hevHbH87sFEOeYmJHOaR+XGm+HR8C9Vb/d3lZssXnO3svm86nHtEhKc4shpz
+                        YbBDf4tnZM5RFWBszDFxzQbHjeZ1EjWWNh2EOoVsVPUWhGHOvZK8c8rrWJ96soWT
+                        TZVoJlJWbTvm52WXBjdbWg6R3DQEaPoCVH1tMhduoq7qUqrMCT3wyHH4bqtcUP9N
+                        HHJupopkfvYiw/VIdHG2wXTgr4tnmxlVQoaCq0qNuKpGa+WCBoAoBmcedIeZE66z
+                        gPWk1kfXS+8Qnv++JKLXyAEDinlNWvF3ijaEQTEl21GdRZoY1Pb9OMDZbsOBW3kn
+                        hnlAZJOB8bobTDxcs9WEBjDXdxQ8GBvi+EnbB6xtL0F2rdnZp5lYJR5XV8eR6u1e
+                        lhA46IsnmZRG5IiFTuGtcDzD5EaXlY4/hwOKSqo2o/eE3l/lnTDonrEwAXic80HX
+                        1v6lZOWfx3vVkvq0Ej35iaGMUG7WueI3MqREBVqFYrAQGmkc9QRjP4PafW2hhhbI
+                        hkhtssC3lZ0zT3QjWZ7gX1NVBYXItixZZ/cTdjfwkp4FL42yYQKCAQEA9JWvp/49
+                        HnAyUfYZoc8exZlTzVeBPxPCfugXwVj0U8js0lhc9LwuE0XpQ5O6Wd+xU6vDuDKQ
+                        kJtLtzsmxNwvHBY3CSYNOeEZhfd/BZTZ+hM9yCC7cspsypTStuYOvwIju0yZXRGk
+                        HtcK8A7vMIPyc85mXttpc07QxIqBe5ngP9amojWrzqCUiGa55Rv1lFnZTeQliCQO
+                        zPmUdsw+ObGIYtdasulsW6a5bwYZY6AzBMzoKrhpcvpUzhW2n/FR5Gt9hFWz6JEL
+                        gA1wuVGN7GMQtZa1iYWPo0p2wHOv8qSGQSANUKsrpEiVVuhOYRJJlThpdnr7gTws
+                        DeiBJd6Uyjs9DQKCAQEA3FHcpQ3CRNQTRZLRmLzko61/voaXedTMgH+/m/ZmK+d2
+                        5SIWLnMt2/4becnFWLYNneDog3Z9NB8NNLs5rGUyPuP/PO3EKNr7beKnw2fLHeqq
+                        9VIRAoHf0jN1SLlvJaCgRreO7DuDYgq6ZOOyZaiPRUBAKN8Hn37MQq6Fs5CP12q7
+                        J78in2gu9fJEI2HoemJgx5tiNctldenyYIjDAe9M7xUx1uPT3/XQBaRBdLVjXZCp
+                        hmcF9A07R0vDPS6L601I0sqJRf2REOMtUZoZWOyv8o8BMcX+q1TszUIp6xBkeaGr
+                        rSoZkskvF+p2IrCW/OK6baEwN4ApX0BdLijf9qZObQKCAQBs7wI2O0jzdpsi4A5Y
+                        gAw/i+PEMDYTZvSYWzzBU6I2cuXvZYW5RtrqoJedDn3QK44qKvVX48V5coFNkZ3Z
+                        zgt5YfePLpBzd+tLPIkpbjuLYuiAavuxy7CapaAX7+0fa4+Iizw/NG05gyOO+cfU
+                        fuAMbiAwHV8hCTh4YQv8hfNX232J/4eO1vxwp/ghr8s4ELB1PajtssmYx4w1QRBx
+                        171b8Hin+MjXJTGv3jKOqbovaCf7ZvkoSZBd3VPidrO3nZxgxV8EtR0/Ij1TfJxO
+                        bWzyw7YFEyR/YNn1K1FxK4/UD7d+d05PtDg3Ze4K0/9L470tFOdRjwA8DZL/z9vL
+                        Gok9AoIBACIN/T79+3NMHJZ6dS9YszahkMdQYoWQYPPTyzg+Q9ixdG1CcY9IemQw
+                        yOpwR7LIoR4wL4ByhjPSQOZPskB1e+jAsSknz1RJVOfNSwUnO/wp07cLslli3cfN
+                        8GkHUKjORTfpE4xsPoifA+SoVWDlRw/7OG+Y2cLLhKMh+sSgqbswYjFol99v6SJX
+                        CjU14wtXvYHdALcz80DgonhNa2cXKBskeYmvuYY6pqbYls2FZBCIVcvSjNcGXI1O
+                        pqUEVthOH92FNOa+pPepRc4BNb3LB/9EH3kkE5NEEz4+5d/RrtYmKTUg9sb7le3q
+                        bcw643u/R/W+HofVpY91kXGbG9MyLZkCggEAYaLKzTaxf0faIU9QetnKJuczBPb9
+                        SXTonGz5MibNgn2V0YJGBSX3nLLm52aan9aTtcobW0pYMtDyXcEwDCP3qTuj+unw
+                        JUXVKNnJtBiucVeHLU32ttNRB8sNkB2EtdYgIj50Vbgw28aUlPzxvb9JSf8rjPbX
+                        X5HeGgjjYMn3n5cbI7wBn/LgYFS4iaR5pMtKxNiSR36MoShdi6T0FUkky+1oiiJB
+                        f60f7XZGXxLIjqWXwM1tW1MJQOPMC2k7RRGcx6m5cBq/46fK6UD1hRh+X9ls/MJO
+                        2iAk0tEVV93Ijmz5Vq7bBvngl10M37swPX29pwbAMADvkm5MmUPylLbyCQ==
+                        -----END RSA PRIVATE KEY-----
+
+
+
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8700/eureka/                                 
