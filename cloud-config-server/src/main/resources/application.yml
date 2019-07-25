@@ -16,7 +16,7 @@ spring:
           - configuration/
           private-key: |
                         -----BEGIN RSA PRIVATE KEY-----
-                        MIIJJwIBAAKCAgEA0n7ZH0c3wl92itUmvDjD/HYvEdUTiULHLrtit/jhyAxie/CU
+                        IIJJwIBAAKCAgEA0n7ZH0c3wl92itUmvDjD/HYvEdUTiULHLrtit/jhyAxie/CU
                         fmm6519vvBzPS0uokaeJTECaDmJv2isZKGCAb5MmcYj+MUNL3A1sm2NfKnVacDnz
                         dQjZWbVfTuLsZuYeAIFjdFUAAtKbeHDLg39P5WPVmIMZRYN3ukpL09yFVOk7yTZk
                         RhvAGG246HSjz0nbJaYvglKO+ujDeePdLR+nw3xKBDs8+XO/jx9QDNauF1e2kyo1
